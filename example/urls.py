@@ -8,4 +8,4 @@ urlpatterns = [
     path('song/', views.display_text, name='song'),
 ]
 
-handler404 = 'home.views.custom_404'
+handler404 = 'example.views.custom_404'
