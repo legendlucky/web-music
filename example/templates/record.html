@@ -11,6 +11,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
             margin: 0;
             font-family: Arial, sans-serif;
         }
@@ -38,6 +39,25 @@
         #result {
             margin-top: 20px;
             text-align: center;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80px;
+        }
+        .logo{
+            width: 200px;
+        }
+        section{
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            color: gray;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -113,11 +133,21 @@
     </script>
 </head>
 <body>
-    <button id="recordButton">
-        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 14C13.1 14 14 13.1 14 12V6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6V12C10 13.1 10.9 14 12 14ZM18 11V12C18 15.31 15.31 18 12 18C8.69 18 6 15.31 6 12V11H4V12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12V11H18ZM11 22H13V24H11V22Z" fill="white"/>
-        </svg>
-    </button>
+    <header>
+        <a href="/">
+            <img src="https://i.ibb.co/crRhLhx/MUSICs.png" alt="logo" class="logo">
+        </a>
+    </header>
+    <section>
+        <button id="recordButton">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 14C13.1 14 14 13.1 14 12V6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6V12C10 13.1 10.9 14 12 14ZM18 11V12C18 15.31 15.31 18 12 18C8.69 18 6 15.31 6 12V11H4V12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12V11H18ZM11 22H13V24H11V22Z" fill="white"/>
+            </svg>
+        </button>
+    </section>
+    <footer>
+        &#169 mr.lucky
+    </footer>
     <p id="result"></p>
 </body>
 </html>
