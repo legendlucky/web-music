@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://img.icons8.com/?size=100&id=TooeCxLa1PBN&format=png&color=000000" type="image/x-icon">
+    {% load static %}
     <title>{{ songname }} by {{ artist }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -91,7 +92,7 @@
 <body>
     <header>
         <a href="/">
-            <img src="https://i.ibb.co/crRhLhx/MUSICs.png" alt="logo" class="logo">
+            <img src="{% static "music.svg" %}" alt="logo" class="logo">
         </a>
     </header>
    <section>
